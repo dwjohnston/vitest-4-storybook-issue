@@ -1,17 +1,20 @@
 import { describe, expect, it } from "vitest";
+import { computed, ref } from "vue";
 
 describe("objectContainging", () => {
   it("does not match in v4", () => {
     const result = {
       data: {
-        a: "hello",
-        b: "world",
+        a: computed(() => "hello"),
+        b: computed(() => "world"),
       },
     };
 
-    expect(result).toEqual(
+    console.log(result.data);
+
+    expect(result.data).toEqual(
       expect.objectContaining({
-        a: "world",
+        a: "hello",
       })
     );
   });
