@@ -8,7 +8,7 @@ async function waitTenSeconds() {
 
   return 99;
 }
-it.only("timer test", async () => {
+it("timer test", async () => {
   const prom = waitTenSeconds();
 
   vi.runAllTimers();
