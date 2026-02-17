@@ -6,6 +6,18 @@
   "license": "MIT",
   "author": "",
   "main": "index.js",
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": "22.22.0",
+      "onFail": "error"
+    },
+    "packageManager": {
+      "name": "npm",
+      "version": "11.10.0",
+      "onFail": "error"
+    }
+  },
   "scripts": {
     "test": "vitest"
   },
