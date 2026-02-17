@@ -28,5 +28,11 @@
   },
   "dependencies": {
     "vite": "^7.2.4"
+  },
+  "overrides": {
+    "storybook": {
+      "@vitest/expect": "4.0.17",
+      "@vitest/spy": "4.0.17"
+    }
   }
 }
