@@ -6,13 +6,24 @@
   "license": "MIT",
   "author": "",
   "main": "index.js",
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": "22.22.0",
+      "onFail": "error"
+    },
+    "packageManager": {
+      "name": "npm",
+      "version": "11.10.0",
+      "onFail": "error"
+    }
+  },
   "scripts": {
     "test": "vitest"
   },
   "devDependencies": {
     "typescript": "^5.9.3",
-    "vitest": "4.0.17",
-    "storybook": "^10.1.11"
+    "vitest": "4.0.17"
   },
   "dependencies": {
     "vite": "^7.2.4"
